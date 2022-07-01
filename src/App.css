@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: rgb(230, 230, 230);
+}
+
+.disconnected {
+  background: rgb(192, 192, 192);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+.connected {
+  background: rgb(28, 221, 28);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 3fr 2fr;
+  grid-gap: 30px;
+  width: 700px;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  overflow: scroll;
+}
+
+table {
+  width: 700px;
+}
+
+.name,
+.last-name {
+  border-right: 1px dashed black;
+}
+
+form div {
+  padding: 10px;
+}
+
+
+label {
+  display: inline-block;
+  width: 600px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+input {
+  border: 0px;
+  border-bottom: 2px solid black;
+  width: 60%;
+}
+
+input:focus {
+  outline: none;
+  border: 0px;
+  border-bottom: 2px solid #09f;
+}
+
+button{
+  padding: 5px 0;
+  width: 40%;
+  background: rgb(28, 221, 28);
+  border: 0px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+}
+
+.connected:hover, .disconnected:hover, .trash:hover , button:hover{
+  opacity: 0.6;
+  cursor:default;
+}
+
